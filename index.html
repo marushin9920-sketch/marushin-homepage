@@ -5,7 +5,7 @@
 </div></header>
 
 <main>
-<section class="hero"><div class="container hero-copy"><span class="tag">荒尾から、人と人をつなぐ</span><h1>人とのつながりから、<br><span>未来を育む。</span></h1><p class="lead">自然体験、キャンプ、学び、地域交流。まるしんは、出会いと体験を通して、一人ひとりの新しい一面と成長を育む社会教育団体です。</p><div class="actions"><a class="btn btn-main" href="events.html">イベントを見る</a><a class="btn btn-sub" href="about.html">まるしんについて</a></div></div></section>
+<section class="hero"><div class="container hero-copy"><span class="tag">荒尾から、人と人をつなぐ</span><h1><span data-site="hero_title">人とのつながりから、未来を育む。</span></h1><p class="lead" data-site="hero_text">自然体験、キャンプ、学び、地域交流。まるしんは、出会いと体験を通して、一人ひとりの新しい一面と成長を育む社会教育団体です。</p><div class="actions"><a class="btn btn-main" href="events.html">イベントを見る</a><a class="btn btn-sub" href="about.html">まるしんについて</a></div></div></section>
 <section><div class="container"><div class="head"><span>EVENTS</span><h2>募集中・開催予定のイベント</h2><p>子どもたちの「やってみたい」を地域の皆さんと一緒に形にします。</p></div><div class="grid3">
 <article class="card"><img src="assets/images/skateboard.png" alt="スケートボード体験会"><div class="card-body"><span class="status">開催予定</span><h3>スケートボード体験会</h3><p>2026年10月11日（日）。初心者向けの体験会です。</p><a class="btn btn-main" target="_blank" href="https://forms.gle/H3bsGGt8B6TbMAEm7">申込みはこちら</a></div></article>
 <article class="card"><img src="assets/images/activity-2.jpg" alt="キャンプ"><div class="card-body"><span class="status">開催予定</span><h3>キャンプファイヤーキャンプ</h3><p>2026年10月31日（土）〜11月1日（日）。自然体験と野外炊飯を楽しみます。</p><a class="btn btn-main" target="_blank" href="https://forms.gle/H3bsGGt8B6TbMAEm7">申込みはこちら</a></div></article>
@@ -21,4 +21,17 @@
 </main>
 
 <footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt=""><div><strong>荒尾社会教育団体 まるしん</strong><br><small>人とのつながりから、未来を育む。</small></div></div><div>© 2026 marushin</div></div></footer>
+
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user && window.location.hash.includes("invite_token")) {
+      window.netlifyIdentity.open("signup");
+    }
+  });
+  window.netlifyIdentity.on("login", () => {
+    document.location.href = "/admin/";
+  });
+}
+</script>
 </body></html>

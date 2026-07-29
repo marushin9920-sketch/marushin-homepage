@@ -5,4 +5,17 @@
 </div></header>
 <main><section class="page-hero"><div class="container"><span class="tag">UPDATE</span><h1>活動報告</h1></div></section><section><div class="container grid3" id="reports-list"></div></section></main>
 <footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt=""><div><strong>荒尾社会教育団体 まるしん</strong><br><small>人とのつながりから、未来を育む。</small></div></div><div>© 2026 marushin</div></div></footer>
-<script src="assets/site.js"></script><script>renderReports('reports-list');</script></body></html>
+<script src="assets/site.js"></script><script>renderReports('reports-list');</script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user && window.location.hash.includes("invite_token")) {
+      window.netlifyIdentity.open("signup");
+    }
+  });
+  window.netlifyIdentity.on("login", () => {
+    document.location.href = "/admin/";
+  });
+}
+</script>
+</body></html>

@@ -3,6 +3,19 @@
 <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="まるしんロゴ"><div>まるしん<small>荒尾社会教育団体</small></div></a>
 <nav><a href="index.html">トップ</a><a href="about.html">まるしんについて</a><a href="events.html">イベント</a><a href="reports.html">活動報告</a><a href="gallery.html">ギャラリー</a><a href="volunteer.html">ボランティア</a><a href="contact.html">お問い合わせ</a></nav>
 </div></header>
-<main><section class="page-hero"><div class="container"><span class="tag">VOLUNTEER</span><h1>ボランティア募集</h1></div></section><section><div class="container content"><p>まるしんでは、子どもたちの見守りや活動補助、受付、会場運営などにご協力いただける方を募集しています。</p><div class="list"><div class="list-item"><h3>大学生・高校生</h3><p>子どもたちと一緒に活動しながら、教育や地域活動について学べます。</p></div><div class="list-item"><h3>社会人・地域の皆さま</h3><p>得意なことや経験を生かして、無理のない範囲で参加できます。</p></div><div class="list-item"><h3>日本語学校の皆さま</h3><p>日本語に自信がない方も、スタッフがサポートできる体制を整えます。</p></div></div><div class="actions"><a class="btn btn-main" target="_blank" href="https://forms.gle/H3bsGGt8B6TbMAEm7">参加フォーム</a><a class="btn btn-sub" target="_blank" href="https://lin.ee/WJg7IgP">公式LINEで相談</a></div></div></section></main>
+<main><section class="page-hero"><div class="container"><span class="tag">VOLUNTEER</span><h1>ボランティア募集</h1></div></section><section><div class="container content" id="volunteer-content"></div></section></main>
 <footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt=""><div><strong>荒尾社会教育団体 まるしん</strong><br><small>人とのつながりから、未来を育む。</small></div></div><div>© 2026 marushin</div></div></footer>
+<script src="assets/site.js"></script><script>renderVolunteer();</script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user && window.location.hash.includes("invite_token")) {
+      window.netlifyIdentity.open("signup");
+    }
+  });
+  window.netlifyIdentity.on("login", () => {
+    document.location.href = "/admin/";
+  });
+}
+</script>
 </body></html>

@@ -3,6 +3,19 @@
 <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="まるしんロゴ"><div>まるしん<small>荒尾社会教育団体</small></div></a>
 <nav><a href="index.html">トップ</a><a href="about.html">まるしんについて</a><a href="events.html">イベント</a><a href="reports.html">活動報告</a><a href="gallery.html">ギャラリー</a><a href="volunteer.html">ボランティア</a><a href="contact.html">お問い合わせ</a></nav>
 </div></header>
-<main><section class="page-hero"><div class="container"><span class="tag">CONTACT</span><h1>お問い合わせ</h1></div></section><section><div class="container content"><div class="list"><div class="list-item"><h3>メール</h3><a href="mailto:marushin9920@gmail.com">marushin9920@gmail.com</a></div><div class="list-item"><h3>公式LINE</h3><a target="_blank" href="https://lin.ee/WJg7IgP">公式LINEを開く →</a></div><div class="list-item"><h3>Instagram</h3><a target="_blank" href="https://www.instagram.com/marushin725?igsh=MTl0cDM5ZW4ycGZwZw==">@marushin725 →</a></div><div class="list-item"><h3>イベント申込み</h3><a target="_blank" href="https://forms.gle/H3bsGGt8B6TbMAEm7">Googleフォームを開く →</a></div></div></div></section></main>
+<main><section class="page-hero"><div class="container"><span class="tag">CONTACT</span><h1>お問い合わせ</h1></div></section><section><div class="container content"><div class="list"><div class="list-item"><h3>メール</h3><a data-site="email" href="mailto:marushin9920@gmail.com">marushin9920@gmail.com</a></div><div class="list-item"><h3>公式LINE</h3><a target="_blank" data-site="line_url" href="https://lin.ee/WJg7IgP">公式LINEを開く →</a></div><div class="list-item"><h3>Instagram</h3><a target="_blank" data-site="instagram_url" href="https://www.instagram.com/marushin725?igsh=MTl0cDM5ZW4ycGZwZw==">@marushin725 →</a></div><div class="list-item"><h3>イベント申込み</h3><a target="_blank" data-site="form_url" href="https://forms.gle/H3bsGGt8B6TbMAEm7">Googleフォームを開く →</a></div></div></div></section></main>
 <footer><div class="container footer-grid"><div class="footer-brand"><img src="assets/images/logo.png" alt=""><div><strong>荒尾社会教育団体 まるしん</strong><br><small>人とのつながりから、未来を育む。</small></div></div><div>© 2026 marushin</div></div></footer>
+
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user && window.location.hash.includes("invite_token")) {
+      window.netlifyIdentity.open("signup");
+    }
+  });
+  window.netlifyIdentity.on("login", () => {
+    document.location.href = "/admin/";
+  });
+}
+</script>
 </body></html>
