@@ -1,13 +1,10 @@
-Chromebook専用・フォルダ不要版
+公開ページ自動転送の修正版
 
-使い方
-1. ZIPをダウンロードして開く
-2. 中にあるファイルをすべて選択
-3. GitHubの Upload files へ追加
+1. このZIPを開く
+2. 中のHTMLファイル7個をすべて選択
+3. GitHubの Upload files へアップロード
 4. Commit changes を押す
+5. 1〜2分後に https://marushin-arao.netlify.app/ を開く
 
-この版は admin / assets / content のフォルダを使いません。
-必要なファイルはすべて同じ場所にあります。
-
-管理画面URL:
+管理画面は従来どおり:
 https://marushin-arao.netlify.app/admin
