@@ -1,0 +1,16 @@
+{
+  "photos": [
+    {
+      "image": "/assets/images/activity-1.jpg",
+      "caption": "まるしん活動写真"
+    },
+    {
+      "image": "/assets/images/activity-2.jpg",
+      "caption": "まるしん活動写真"
+    },
+    {
+      "image": "/assets/images/activity-3.jpg",
+      "caption": "まるしん活動写真"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: ja
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "site_data"
+    label: "ホームページ編集"
+    files:
+      - name: "site"
+        label: "基本設定"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - {label: "トップ見出し", name: "hero_title", widget: "string"}
+          - {label: "トップ説明", name: "hero_text", widget: "text"}
+          - {label: "メールアドレス", name: "email", widget: "string"}
+          - {label: "公式LINE URL", name: "line_url", widget: "string"}
+          - {label: "Instagram URL", name: "instagram_url", widget: "string"}
+          - {label: "申込みフォーム URL", name: "form_url", widget: "string"}
+
+      - name: "events"
+        label: "イベント"
+        file: "content/events.json"
+        format: "json"
+        fields:
+          - label: "イベント一覧"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "イベント名", name: "title", widget: "string"}
+              - {label: "開催日", name: "date", widget: "string"}
+              - {label: "受付状況", name: "status", widget: "select", options: ["申込受付中", "開催予定", "募集終了", "開催終了"]}
+              - {label: "説明", name: "description", widget: "text"}
+              - {label: "写真", name: "image", widget: "image"}
+              - {label: "申込みURL", name: "form_url", widget: "string"}
+
+      - name: "reports"
+        label: "活動報告"
+        file: "content/reports.json"
+        format: "json"
+        fields:
+          - label: "活動報告一覧"
+            name: "reports"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "タイトル", name: "title", widget: "string"}
+              - {label: "日付", name: "date", widget: "string"}
+              - {label: "本文", name: "description", widget: "text"}
+              - {label: "写真", name: "image", widget: "image"}
+              - {label: "リンク", name: "link", widget: "string", required: false}
+
+      - name: "gallery"
+        label: "フォトギャラリー"
+        file: "content/gallery.json"
+        format: "json"
+        fields:
+          - label: "写真一覧"
+            name: "photos"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - {label: "写真", name: "image", widget: "image"}
+              - {label: "説明", name: "caption", widget: "string"}
+
+      - name: "volunteer"
+        label: "ボランティア募集"
+        file: "content/volunteer.json"
+        format: "json"
+        fields:
+          - {label: "ページタイトル", name: "title", widget: "string"}
+          - {label: "紹介文", name: "lead", widget: "text"}
+          - label: "募集区分"
+            name: "groups"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "区分名", name: "name", widget: "string"}
+              - {label: "説明", name: "description", widget: "text"}
