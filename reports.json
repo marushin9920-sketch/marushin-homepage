@@ -4,22 +4,22 @@
       "title": "秋のデイキャンプ",
       "date": "活動報告",
       "description": "自然の中での体験と交流を楽しみました。",
-      "image": "/assets/images/activity-1.jpg",
-      "link": "/assets/docs/report-autumn-camp.pdf"
+      "image": "/activity-1.jpg",
+      "link": "/report-autumn-camp.pdf"
     },
     {
       "title": "荒尾アドベンチャープログラム",
       "date": "活動報告",
       "description": "仲間と協力しながら挑戦する体験活動を行いました。",
-      "image": "/assets/images/activity-2.jpg",
-      "link": "/assets/docs/report-arao-pa.pdf"
+      "image": "/activity-2.jpg",
+      "link": "/report-arao-pa.pdf"
     },
     {
       "title": "地域交流活動",
       "date": "活動報告",
       "description": "体験を通して新しいつながりが生まれました。",
-      "image": "/assets/images/activity-3.jpg",
-      "link": "/assets/docs/report-mask.pdf"
+      "image": "/activity-3.jpg",
+      "link": "/report-mask.pdf"
     }
   ]
 }

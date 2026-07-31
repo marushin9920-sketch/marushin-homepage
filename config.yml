@@ -3,8 +3,8 @@ backend:
   branch: main
 
 locale: ja
-media_folder: "assets/images/uploads"
-public_folder: "/assets/images/uploads"
+media_folder: ""
+public_folder: "/"
 
 collections:
   - name: "site_data"
@@ -12,7 +12,7 @@ collections:
     files:
       - name: "site"
         label: "基本設定"
-        file: "content/site.json"
+        file: "site.json"
         format: "json"
         fields:
           - {label: "トップ見出し", name: "hero_title", widget: "string"}
@@ -24,7 +24,7 @@ collections:
 
       - name: "events"
         label: "イベント"
-        file: "content/events.json"
+        file: "events.json"
         format: "json"
         fields:
           - label: "イベント一覧"
@@ -41,7 +41,7 @@ collections:
 
       - name: "reports"
         label: "活動報告"
-        file: "content/reports.json"
+        file: "reports.json"
         format: "json"
         fields:
           - label: "活動報告一覧"
@@ -57,7 +57,7 @@ collections:
 
       - name: "gallery"
         label: "フォトギャラリー"
-        file: "content/gallery.json"
+        file: "gallery.json"
         format: "json"
         fields:
           - label: "写真一覧"
@@ -70,7 +70,7 @@ collections:
 
       - name: "volunteer"
         label: "ボランティア募集"
-        file: "content/volunteer.json"
+        file: "volunteer.json"
         format: "json"
         fields:
           - {label: "ページタイトル", name: "title", widget: "string"}
